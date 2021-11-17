@@ -117,8 +117,8 @@ function bash_prompt() {
     fi
 
     #  CUSTOMIZE: if not using Debian/Ubuntu (or you never use chroot), use the first version of this line
-    # prompt="$yellow${specialpart} ${branch:+$green[$branch] }$blue${promptpath}\$$black$reset "
-    prompt="${debian_chroot:+($debian_chroot)}$yellow${specialpart} ${branch:+$green[$branch] }$blue${promptpath}\$$black$reset "
+    # prompt="$yellow${specialpart} ${branch:+$green[$branch] }$blue${promptpath}\\\$$black$reset "
+    prompt="${debian_chroot:+($debian_chroot)}$yellow${specialpart} ${branch:+$green[$branch] }$blue${promptpath}\\\$$black$reset "
     echo -n "$prompt"
 }
 
